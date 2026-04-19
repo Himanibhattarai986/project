@@ -26,6 +26,9 @@
     <main>
         <section id="home" class="hero">
             <h1 class="hero-title">Himani Bhattarai<br><span class="highlight"></span></h1>
+            <div class="hero-image">
+    <img src="image/picture.png" alt="Himani Bhattarai">
+</div>
             <p class="hero-subtitle">Data Science Student</p>
 
             <!-- Clocks -->
@@ -147,27 +150,29 @@
                 <p>Send me a message and I'll get back to you soon.</p>
             </div>
 
-            <div class="contact-container">
-                    <div class="form-group">
-                        <label for="name">Name</label>
-                        <input type="text" id="name" name="name" required placeholder="Name">
-                    </div>
+         <div class="contact-container">
+    <form id="contact-form">
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required placeholder="Name">
+        </div>
 
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email" required placeholder="Email">
-                    </div>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required placeholder="Email">
+        </div>
 
-                    <div class="form-group">
-                        <label for="message">Message</label>
-                        <textarea id="message" name="message" required rows="5"
-                            placeholder="Your message here..."></textarea>
-                    </div>
+        <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required rows="5"
+                placeholder="Your message here..."></textarea>
+        </div>
 
-                    <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+        <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+    </form>
 
-                    <button type="submit" class="btn btn-primary btn-block">Send Message</button>
-                </form>
+    <p id="success-msg" style="display:none;">✅ Message sent successfully!</p>
+</div>
             </div>
         </section>
     </main>
