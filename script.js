@@ -65,3 +65,21 @@ document.addEventListener('DOMContentLoaded', () => {
   updateClocks();
     setInterval(updateClocks, 1000);
 });
+const form = document.getElementById("contact-form");
+const successMsg = document.getElementById("success-msg");
+
+form.addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    const button = form.querySelector("button");
+    button.innerText = "Sending...";
+    button.disabled = true;
+
+    setTimeout(() => {
+        successMsg.style.display = "block";
+        form.reset();
+
+        button.innerText = "Send Message";
+        button.disabled = false;
+    }, 1500);
+});
