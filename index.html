@@ -1,22 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio | Creative Professional</title>
     <link rel="stylesheet" href="style.css">
-    <!-- Google Fonts for typography -->
+<!-- Font import -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@0,600;1,600&display=swap"
         rel="stylesheet">
 </head>
-
 <body class="theme-transition">
-
-    <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-brand">Portfolio</div>
         <ul class="nav-links">
@@ -24,21 +20,15 @@
             <li><a href="#resume">Resume</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
-        <div class="nav-cta">
-            <a href="#contact" class="btn btn-primary">Get in touch →</a>
-        </div>
+        
     </nav>
 
     <main>
-        <!-- Hero Section -->
         <section id="home" class="hero">
             <h1 class="hero-title">Himani Bhattarai<br><span class="highlight"></span></h1>
-            <p class="hero-subtitle">A highly motivated web developer with a strong passion for building clean, responsive, and user-centered digital experiences. 
-                Committed to writing well-structured, maintainable code, 
-                with a keen eye for detail and a focus on delivering visually refined, 
-                intuitive interfaces that enhance usability and overall user satisfaction.</p>
+            <p class="hero-subtitle">Data Science Student</p>
 
-            <!-- Clocks Section -->
+            <!-- Clocks -->
             <div class="clocks-container">
                 <div class="clock-card">
                     <h3>Local Time</h3>
@@ -68,7 +58,7 @@
             </div>
         </section>
 
-        <!-- Resume Section -->
+        <!-- Resume -->
         <section id="resume" class="section resume-section">
             <div class="section-header">
                 <h2>Experience & Education</h2>
@@ -116,7 +106,7 @@
                         <ul class="resume-skills-list">
                             <li>Communication</li>
                             <li>TeamWork</li>
-                            <li>Basics in Programming Languages (C, C++, JavaScript)</li>
+                            <li>Basics in Programming Languages (C, C++, JavaScript, HTML, & CSS)</li>
                             <li>Leadership</li>
                         </ul>
                     </div>
@@ -150,27 +140,22 @@
             </div>
         </section>
 
-        <!-- Contact Section -->
+        <!-- Contact -->
         <section id="contact" class="section contact-section">
             <div class="section-header">
-                <h2>Let's Work Together</h2>
+                <h2>Contact</h2>
                 <p>Send me a message and I'll get back to you soon.</p>
             </div>
 
             <div class="contact-container">
-                <!-- Web3Forms Integration -->
-                <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
-                    <!-- Replace with your Access Key -->
-                    <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
-
                     <div class="form-group">
                         <label for="name">Name</label>
-                        <input type="text" id="name" name="name" required placeholder="John Doe">
+                        <input type="text" id="name" name="name" required placeholder="Name">
                     </div>
 
                     <div class="form-group">
                         <label for="email">Email</label>
-                        <input type="email" id="email" name="email" required placeholder="john@example.com">
+                        <input type="email" id="email" name="email" required placeholder="Email">
                     </div>
 
                     <div class="form-group">
@@ -179,7 +164,6 @@
                             placeholder="Your message here..."></textarea>
                     </div>
 
-                    <!-- Honeypot Spam Protection -->
                     <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
 
                     <button type="submit" class="btn btn-primary btn-block">Send Message</button>
