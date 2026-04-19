@@ -1,26 +1,24 @@
-/* CSS Variables for Theme Management */
 :root {
-    /* Light Mode Palette (Cream, Warm, Earthy based on Flowblox image) */
-    --bg-color: #FAF8F2;
-    --surface-color: #EFECE1;
-    --surface-hover: #E3DFD2;
-    --text-primary: #1C1917;
-    --text-secondary: #57534E;
+    --bg-color: #f8fcf7;
+    --surface-color: #f5fcf3;
+    --surface-hover: #ddf1df;
+    --text-primary: #204d10;
+    --text-secondary: #193e1f;
     --accent-color: #1A1A1A;
     --accent-text: #FAFAFA;
-    --border-color: #D6D3D1;
+    --border-color: #e5f8d9;
     
-    /* Clock Specifics */
+
     --clock-face: #FFFFFF;
     --clock-border: #EFECE1;
-    --hand-color: #1C1917;
-    --hand-accent: #D97706; /* Warm amber for seconds hand */
+    --hand-color: #000802;
+    --hand-accent: #d3f7ca; 
 
-    /* Typography */
+
     --font-sans: 'Inter', sans-serif;
     --font-serif: 'Playfair Display', serif;
     
-    /* Spacing & Border Radius */
+
     --radius-sm: 8px;
     --radius-md: 16px;
     --radius-lg: 24px;
@@ -28,7 +26,7 @@
     --shadow-soft: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.01);
 }
 
-/* Dark Mode Palette (Warm Dark Stone) */
+/* DARK pallete */
 [data-theme="dark"] {
     --bg-color: #1C1917;
     --surface-color: #292524;
@@ -44,7 +42,6 @@
     --hand-color: #F5F5F4;
 }
 
-/* Base Styles & Reset */
 * {
     margin: 0;
     padding: 0;
@@ -63,7 +60,6 @@ body {
     overflow-x: hidden;
 }
 
-/* Theme Transition */
 .theme-transition,
 .theme-transition *,
 .theme-transition *:before,
@@ -71,14 +67,13 @@ body {
     transition: background-color 0.5s ease, color 0.5s ease, border-color 0.5s ease, box-shadow 0.5s ease;
 }
 
-/* Typography */
 h1, h2, h3, h4, .hero-title {
     font-family: var(--font-serif);
     font-weight: 600;
     line-height: 1.2;
 }
 
-/* Navigation */
+
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -115,7 +110,7 @@ h1, h2, h3, h4, .hero-title {
     color: var(--text-primary);
 }
 
-/* Buttons */
+
 .btn {
     display: inline-flex;
     align-items: center;
@@ -146,7 +141,7 @@ h1, h2, h3, h4, .hero-title {
     border-radius: var(--radius-md);
 }
 
-/* Main Sections */
+
 .section {
     padding: 6rem 5%;
     max-width: 1200px;
@@ -168,7 +163,7 @@ h1, h2, h3, h4, .hero-title {
     font-size: 1.1rem;
 }
 
-/* Hero Section */
+
 .hero {
     min-height: 80vh;
     display: flex;
@@ -192,7 +187,6 @@ h1, h2, h3, h4, .hero-title {
     margin-bottom: 4rem;
 }
 
-/* Clocks Container */
 .clocks-container {
     display: flex;
     gap: 3rem;
@@ -227,7 +221,7 @@ h1, h2, h3, h4, .hero-title {
     color: var(--text-primary);
 }
 
-/* Minimalistic Analogue Clock */
+
 .analogue-clock {
     width: 120px;
     height: 120px;
@@ -242,7 +236,7 @@ h1, h2, h3, h4, .hero-title {
     position: relative;
     width: 100%;
     height: 100%;
-    transform: translateY(-3px); /* Optical adjustment */
+    transform: translateY(-3px); 
 }
 
 .hand {
@@ -252,7 +246,7 @@ h1, h2, h3, h4, .hero-title {
     transform-origin: bottom;
     border-radius: 4px;
     z-index: 10;
-    /* initial rotation to be overridden by JS */
+    
     transform: translateX(-50%) rotate(0deg); 
 }
 
@@ -454,7 +448,6 @@ footer {
     font-size: 0.9rem;
 }
 
-/* Responsive Design (Mobile Support) */
 @media screen and (max-width: 768px) {
     .navbar {
         flex-direction: column;
